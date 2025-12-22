@@ -4,37 +4,38 @@
 
 
 :root {
-    --h1-fz                    : 30px;
-    --h1-lh                    : 1.3;
-    --h2-fz                    : 26px;
-    --h2-lh                    : 1.3;
-    --h3-fz                    : 22px;
-    --h3-lh                    : 1.3;
-    --base-fz                  : 16px;
-    --base-lh                  : 25.6px;
-    --small-fz                 : 16px;
-    --small-lh                 : 1.3;
+    --h1-fz                    : 64px;
+    --h1-lh                    : 1.2;
+    --h2-fz                    : 42px;
+    --h2-lh                    : 1.2;
+    --h3-fz                    : 26px;
+    --h3-lh                    : 1.2;
+    --h4-fz                    : 42px;
+    --h4-lh                    : 1.2;
+    --h5-fz                    : 40px;
+    --h5-lh                    : 1.2;
+    --base-fz                  : 14px;
+    --base-lh                  : 1.5;
+    --buttom-menu-fz           : 16px;
+    --buttom-menu-lh           : 1.2;
+    --h-footer-fz              : 18px;
+    --h-footer-lh              : 1;
+    --menu-footer-fz           : 15px;
+    --menu-footer-lh           : 1;
+    --body-footer-fz           : 16px;
+    --body-footer-lh           : 1;
 }
 
 @media (min-width: 768px) {
     :root {
-        --h1-fz                    : 35px;
-        --h1-lh                    : 45.5px;
-    }
-}
-
-@media (min-width: 1200px) {
-    :root {
-        --h1-fz                    : 64px;
-        --h1-lh                    : 1.3;
-        --h2-fz                    : 44px;
-        --h2-lh                    : 1.3;
-        --h3-fz                    : 32px;
-        --h3-lh                    : 1.3;
-        --base-fz                  : 20px;
-        --base-lh                  : 1.3;
-        --small-fz                 : 16px;
-        --small-lh                 : 1.3;
+        --h1-fz                    : 90px;
+        --h1-lh                    : 1.2;
+        --h2-fz                    : 84px;
+        --h2-lh                    : 1.2;
+        --h3-fz                    : 48px;
+        --h3-lh                    : 1.2;
+        --base-fz                  : 18px;
+        --base-lh                  : 1.5;
     }
 }
 
@@ -55,22 +56,26 @@ $fw-semi       : 600;
 $fw-regular    : 500;
 $fw-normal     : 300;
 
-$h1-fz                    : var(--h1-fz);
-$h1-lh                    : var(--h1-lh);
-$h2-fz                    : var(--h2-fz);
-$h2-lh                    : var(--h2-lh);
-$h3-fz                    : var(--h3-fz);
-$h3-lh                    : var(--h3-lh);
-$h4-fz                    : var(--h4-fz);
-$h4-lh                    : var(--h4-lh);
-$h5-fz                    : var(--h5-fz);
-$h5-lh                    : var(--h5-lh);
-$base-fz                  : var(--base-fz);
-$base-lh                  : var(--base-lh);
-$small-fz                 : var(--small-fz);
-$small-lh                 : var(--small-lh);
-$numbers-fz               : var(--numbers-fz);
-$numbers-lh               : var(--numbers-lh);
+$h1-fz            : var(--h1-fz);
+$h1-lh            : var(--h1-lh);
+$h2-fz            : var(--h2-fz);
+$h2-lh            : var(--h2-lh);
+$h3-fz            : var(--h3-fz);
+$h3-lh            : var(--h3-lh);
+$h4-fz            : var(--h4-fz);
+$h4-lh            : var(--h4-lh);
+$h5-fz            : var(--h5-fz);
+$h5-lh            : var(--h5-lh);
+$base-fz          : var(--base-fz);
+$base-lh          : var(--base-lh);
+$button-menu-fz   : var(--buttom-menu-fz);
+$button-menu-lh   : var(--buttom-menu-lh);
+$footer-h-fz      : var(--h-footer-fz);
+$footer-h-lh      : var(--h-footer-lh);
+$footer-menu-fz   : var(--menu-footer-fz);
+$footer-menu-lh   : var(--menu-footer-lh);
+$footer-body-fz   : var(--body-footer-fz);
+$footer-body-lh   : var(--body-footer-lh);
 
 b, strong{font-weight: $fw-bold;}
 em, i{font-style: italic;}
@@ -95,7 +100,6 @@ p,
 a,
 li{
     font-family: $ff-2;
-    font-weight: 300;
 }
 
 
