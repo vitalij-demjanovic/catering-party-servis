@@ -53,7 +53,6 @@ function swiper_css_js() {
 add_action('wp_enqueue_scripts', 'swiper_css_js');
 
 function add_theme_style() {
-    wp_enqueue_style('wp-core-styles', get_template_directory_uri() . '/css/wp-styles.css', [], '1.1', false);
     wp_enqueue_style('main-style', get_stylesheet_uri(), [], THEME_VERSION);
 }
 
