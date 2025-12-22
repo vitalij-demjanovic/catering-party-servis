@@ -12,5 +12,27 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header class="main-header">
+    <div class="container">
+        <div class="navbar-1">
+            <div>
+                <a href="#" class="menu-btn btn-primary">Menu</a>
+            </div>
+            <div class="navbar-brand">
+                <?php
+                if (function_exists('get_field')) {
+                    $logo = get_field('main_logo', 'option');
 
+                    if ($logo) {
+                        echo '<a href="' . esc_url(home_url('/')) . '" title="Logo">';
+                        echo wp_get_attachment_image($logo['ID'], 'full', '', array('class' => ''));
+                        echo '</a>';
+                    }
+                }
+                ?>
+            </div>
+            <div>
+                <a href="#" class="contact-btn btn-primary">Kontakt</a>
+            </div>
+        </div>
+    </div>
 </header>

@@ -8,6 +8,7 @@ html {
 body {
     overflow-y: scroll;
     overflow-x: hidden;
+    background: linear-gradient(201.55deg, #010E07 28.31%, #0B332B 41.87%, #010E07 55.63%, #0B332B 71.69%) no-repeat;
 }
 
 html * {
@@ -94,13 +95,17 @@ $space-150: 150px;
     font-family: "Outfit", sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    padding: 24px 40px;
+    padding: 14px 24px;
+    font-weight: 500;
     width: fit-content;
     display: flex;
     align-items: center;
     text-decoration: none;
     border-radius: 90px;
     transition: all .3s ease-in-out;
+    @media (min-width: $screen-md) {
+        padding: 24px 40px;
+    }
 }
 
 .btn-primary {
