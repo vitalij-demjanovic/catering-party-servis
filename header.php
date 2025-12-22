@@ -31,7 +31,19 @@
                 ?>
             </div>
             <div>
-                <a href="#" class="contact-btn btn-primary">Kontakt</a>
+                <?php
+                $phone = get_field('header_phone', 'option');
+
+                if (!empty($phone['url'])) :
+                    ?>
+                    <a
+                            href="<?= esc_url($phone['url']); ?>"
+                            class="contact-btn btn-primary"
+                            <?= !empty($phone['target']) ? 'target="'. esc_attr($phone['target']) .'"' : ''; ?>
+                    >
+                        Kontakt
+                    </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>
