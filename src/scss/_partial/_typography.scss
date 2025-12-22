@@ -1,0 +1,102 @@
+//
+//  TYPOGRAPHY
+//  --------------------------------------
+
+
+:root {
+    --h1-fz                    : 30px;
+    --h1-lh                    : 1.3;
+    --h2-fz                    : 26px;
+    --h2-lh                    : 1.3;
+    --h3-fz                    : 22px;
+    --h3-lh                    : 1.3;
+    --base-fz                  : 16px;
+    --base-lh                  : 25.6px;
+    --small-fz                 : 16px;
+    --small-lh                 : 1.3;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --h1-fz                    : 35px;
+        --h1-lh                    : 45.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --h1-fz                    : 64px;
+        --h1-lh                    : 1.3;
+        --h2-fz                    : 44px;
+        --h2-lh                    : 1.3;
+        --h3-fz                    : 32px;
+        --h3-lh                    : 1.3;
+        --base-fz                  : 20px;
+        --base-lh                  : 1.3;
+        --small-fz                 : 16px;
+        --small-lh                 : 1.3;
+    }
+}
+
+
+
+
+// Variables
+
+*{
+    font-optical-sizing: auto;
+}
+
+$ff-1   : "Outfit", sans-serif;
+$ff-2   : "Outfit", sans-serif;
+
+$fw-bold       : 700;
+$fw-semi       : 600;
+$fw-regular    : 500;
+$fw-normal     : 300;
+
+$h1-fz                    : var(--h1-fz);
+$h1-lh                    : var(--h1-lh);
+$h2-fz                    : var(--h2-fz);
+$h2-lh                    : var(--h2-lh);
+$h3-fz                    : var(--h3-fz);
+$h3-lh                    : var(--h3-lh);
+$h4-fz                    : var(--h4-fz);
+$h4-lh                    : var(--h4-lh);
+$h5-fz                    : var(--h5-fz);
+$h5-lh                    : var(--h5-lh);
+$base-fz                  : var(--base-fz);
+$base-lh                  : var(--base-lh);
+$small-fz                 : var(--small-fz);
+$small-lh                 : var(--small-lh);
+$numbers-fz               : var(--numbers-fz);
+$numbers-lh               : var(--numbers-lh);
+
+b, strong{font-weight: $fw-bold;}
+em, i{font-style: italic;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $ff-1;
+    font-weight: $fw-bold;
+    & a{
+        font-family: inherit;
+        font-weight: inherit;
+        color: inherit;
+    }
+}
+
+
+p,
+a,
+li{
+    font-family: $ff-2;
+    font-weight: 300;
+}
+
+
+
