@@ -1,0 +1,22 @@
+{
+  "name": "acf/hero-banner-1",
+  "title": "Hero banner 1",
+  "description": "Hero banner with a list of benefits",
+  "category": "vito-dev-blocks",
+  "icon": "align-left",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "hero-banner-1.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "is_preview": true
+      }
+    }
+  },
+  "supports": {
+    "anchor": true
+  }
+}
