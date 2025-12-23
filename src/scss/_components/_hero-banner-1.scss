@@ -1,0 +1,113 @@
+.hero-banner-1 {
+    position: relative;
+    background: #00000066;
+    @media (min-width: $screen-lg) {
+        position: unset;
+        background: transparent;
+    }
+    .position-lg-relative {
+        @media (min-width: $screen-lg) {
+            position: relative;
+        }
+    }
+    .hero-banner-1__image {
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    .bg-wrapper {
+        @media (min-width: $screen-lg) {
+            background: #00000066;
+        }
+    }
+    &__content {
+        padding: 250px 0 180px;
+        text-align: center;
+        color: $color-white;
+        h1 {
+            font-size: $h1-fz;
+            line-height: $h1-lh;
+            color: $color-white;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.2;
+            margin-bottom: 0;
+            @media (min-width: $screen-md) {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+        }
+    }
+    &__actions {
+        margin-top: $space-20;
+        @media (min-width: $screen-md) {
+            margin-top: 60px;
+        }
+    }
+    .hero-banner-1__benefits {
+        padding: $space-32 0;
+        margin-right: -0.75rem;
+        @media (min-width: $screen-xl) {
+            border-top: 1px solid #F2EDE84D;
+            margin: 0 84px;
+        }
+        span {
+            font-family: $ff-2;
+            font-weight: $fw-semi;
+            color: $color-white;
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: $space-32;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #F2EDE84D;
+                margin-left: $space-16;
+            }
+            @media (min-width: $screen-xl) {
+                display: block;
+                margin-bottom: 0;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .list-benefits {
+            @media (min-width: $screen-xl) {
+                width: 80%;
+            }
+            .benefit-image {
+                background: #F2EDE84D;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin-right: $space-12;
+                flex-shrink: 0;
+                img {
+                    max-width: 20px;
+                }
+            }
+            p {
+                color: $color-white;
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: $fw-semi;
+                max-width: 165px;
+                white-space: pre-line;
+            }
+        }
+    }
+}

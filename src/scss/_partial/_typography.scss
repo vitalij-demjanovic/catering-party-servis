@@ -53,7 +53,7 @@ $ff-2   : "Outfit", sans-serif;
 
 $fw-bold       : 700;
 $fw-semi       : 600;
-$fw-regular    : 500;
+$fw-regular    : 400;
 $fw-normal     : 300;
 
 $h1-fz            : var(--h1-fz);
@@ -87,12 +87,7 @@ h4,
 h5,
 h6{
     font-family: $ff-1;
-    font-weight: $fw-bold;
-    & a{
-        font-family: inherit;
-        font-weight: inherit;
-        color: inherit;
-    }
+    font-weight: $fw-regular
 }
 
 
@@ -100,6 +95,7 @@ p,
 a,
 li{
     font-family: $ff-2;
+    font-weight: $fw-normal
 }
 
 
