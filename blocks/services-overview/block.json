@@ -1,0 +1,23 @@
+{
+  "name": "acf/services-overview",
+  "title": "Services overview",
+  "description": "Tabbed services section with stats and gallery",
+  "category": "vito-dev-blocks",
+  "icon": "grid-view",
+  "keywords": ["services", "tabs", "stats"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "services-overview.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "is_preview": true
+      }
+    }
+  },
+  "supports": {
+    "anchor": true
+  }
+}
