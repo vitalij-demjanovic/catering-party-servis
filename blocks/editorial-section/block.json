@@ -1,0 +1,23 @@
+{
+  "name": "acf/editorial-section",
+  "title": "Editorial section",
+  "description": "Structured presentation of services with contextual data and supporting media",
+  "category": "vito-dev-blocks",
+  "icon": "grid-view",
+  "keywords": ["images", "text"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "editorial-section.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "is_preview": true
+      }
+    }
+  },
+  "supports": {
+    "anchor": true
+  }
+}

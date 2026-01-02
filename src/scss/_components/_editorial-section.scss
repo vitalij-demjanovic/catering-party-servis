@@ -1,0 +1,41 @@
+.editorial-section {
+    padding-bottom: 390px;
+    &__content {
+     background: #061210;
+        padding: $space-100;
+        h2, p {
+            max-width: 540px;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: $h2-fz;
+            line-height: $h2-lh;
+            margin-bottom: $space-20;
+        }
+        p {
+            color: #ffffff;
+            margin-bottom: 0;
+        }
+        .btn-primary {
+            margin-top: 60px;
+        }
+    }
+    .editorial-section__images {
+        position: relative;
+    }
+    &__image--primary {
+        max-width: 421px;
+        max-height: 700px;
+        object-fit: cover;
+    }
+    &__image--secondary {
+        max-width: 421px;
+        max-height: 410px;
+        object-fit: cover;
+    }
+    &__image--third {
+        max-width: 263px;
+        max-height: 216px;
+        object-fit: cover;
+    }
+}
